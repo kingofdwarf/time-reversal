@@ -1,0 +1,9 @@
+幫Shadow換個形象	X
+跳到Shadow頭上碰撞偵測	X
+簡單的Trigger機關
+Shadow碰到門也可以通過 X
+優化移動控制
+製作關卡3
+製作關卡prefab
+掉落死亡偵測		X
+Shadow機制粒子效果	X

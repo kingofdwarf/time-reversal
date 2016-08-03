@@ -35,7 +35,6 @@ public class StateRecorder : Recorder
 		//init
 		this.recordData = new Dictionary<int, PlayerState>();
         RecordContainer.records.Add(this.recordData);
-        Debug.Log("Start Record");
     }
 
 	public override void StopRecord ()

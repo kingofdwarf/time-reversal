@@ -144,6 +144,7 @@ GameObject:
   - 82: {fileID: 8200004}
   - 114: {fileID: 11475566}
   - 114: {fileID: 11415028}
+  - 114: {fileID: 11417920}
   m_Layer: 9
   m_Name: hero
   m_TagString: Player
@@ -897,6 +898,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec662954833c824db1277759e99e50c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11417920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08eee047cb998474e9898d5645a23241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyCode: 103
+  spawn: {fileID: 128632, guid: c3c12bda2da1e08458a2dcb7f3a9d230, type: 2}
 --- !u!114 &11437590
 MonoBehaviour:
   m_ObjectHideFlags: 1

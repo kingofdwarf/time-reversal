@@ -30,8 +30,10 @@ public class LevelController : MonoBehaviour
             player.StopRecord();
             shadowSpawer.DestroyAll();
             shadowSpawer.SpawnAll();
+            player.gameObject.SetActive(true);
             player.transform.localPosition = shadowSpawer.transform.localPosition;
             player.StartRecord();
+           
         }
 
     }

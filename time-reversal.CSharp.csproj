@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Controller\ActionPlayer.cs" />
     <Compile Include="Assets\Script\Controller\ActionRecorder.cs" />
+    <Compile Include="Assets\Script\Controller\DeadTrigger.cs" />
     <Compile Include="Assets\Script\Controller\EndPointDetecter.cs" />
     <Compile Include="Assets\Script\Controller\InputController.cs" />
     <Compile Include="Assets\Script\Controller\LevelController.cs" />
@@ -99,6 +100,7 @@
     <Compile Include="Assets\Script\Platformer\ScoreShadow.cs" />
     <Compile Include="Assets\Script\Platformer\SetParticleSortingLayer.cs" />
     <Compile Include="Assets\Script\Platformer\Spawner.cs" />
+    <Compile Include="Assets\Script\Presentation\Effect\InputSpawn.cs" />
     <Compile Include="Assets\Script\Presentation\Hint.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
