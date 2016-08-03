@@ -58,7 +58,8 @@ public class ActionRecorder : Recorder, IInputListener
 		//init
 		this.recordData = new Dictionary<int, ActionState>();
 		player.SetRecordData (this.recordData);
-	}
+        
+    }
 
 	public override void StopRecord ()
 	{

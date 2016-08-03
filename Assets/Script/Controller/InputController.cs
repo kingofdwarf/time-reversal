@@ -28,6 +28,8 @@ public class InputController : MonoBehaviour
 				listenr.Jump ();
 			}
 		}
+
+        
 	}
 
 	void FixedUpdate()

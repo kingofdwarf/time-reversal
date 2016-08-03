@@ -6,10 +6,11 @@ public class TimeController : MonoBehaviour
     public int index;
 
     private bool isForward;
-
+    private bool stop;
     void Awake()
     {
         this.isForward = true;
+        this.stop = false;
     }
 
 	// Use this for initialization
@@ -24,11 +25,24 @@ public class TimeController : MonoBehaviour
        if(Input.GetKeyUp(KeyCode.Z))
         {
             this.isForward = !this.isForward;
+            this.stop = false;
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            this.isForward = false;
+            this.stop = false;
+        }
+        if (Input.GetKeyUp(KeyCode.X))
+        {
+            this.isForward = true;
+            this.stop = false;
+        }
+    }
 
     void FixedUpdate()
     {
+        if (this.stop == true) return;
         if( isForward )
             this.index++;
         else
@@ -37,5 +51,12 @@ public class TimeController : MonoBehaviour
                 this.index = 0;
         }
     }
+
+    public void Stop()
+    {
+        this.stop = true;
+    }
+
+    
     
 }

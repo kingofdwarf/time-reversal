@@ -5,27 +5,35 @@ public abstract class Recorder : MonoBehaviour
 {
 	[SerializeField]
 	protected TimeController timeController;
+    [SerializeField]
+    private bool SelfControl;
 
-	protected bool recording;
+    protected bool recording;
 	// Use this for initialization
 	void Start ()
 	{
-	
+        if (!SelfControl)
+        {
+            StartRecord();
+        }
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if(Input.GetKeyUp(KeyCode.R))
-		{
-			StartRecord ();
-		}
+        if(SelfControl)
+        {
+            if (Input.GetKeyUp(KeyCode.R))
+            {
+                StartRecord();
+            }
 
-		if (Input.GetKeyUp(KeyCode.S))
-		{
-			StopRecord();
-		}
-
+            if (Input.GetKeyUp(KeyCode.S))
+            {
+                StopRecord();
+            }
+        }
+		
 		if (recording)
 			Record ();
 	}

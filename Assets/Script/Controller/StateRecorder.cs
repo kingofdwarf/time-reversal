@@ -8,11 +8,11 @@ public struct PlayerState
     public Vector3 postion;
     public int animateState;
     public Quaternion quaternion;
-    public bool direction;
+    public Vector3 scale;
 
     public override string ToString()
     {
-        return "player position: " + this.postion + " direction : " + direction + " animateState:" + animateState;
+        return "player position: " + this.postion + " scale : " + scale + " animateState:" + animateState;
     }
 
 }
@@ -20,9 +20,6 @@ public struct PlayerState
 [RequireComponent(typeof(Animator))]
 public class StateRecorder : Recorder
 {
-    [SerializeField]
-    private StatePlayer player;
-
     private Animator animator;
 
 	private Dictionary<int, PlayerState> recordData= new Dictionary<int, PlayerState>();
@@ -32,41 +29,30 @@ public class StateRecorder : Recorder
         this.animator = this.GetComponent<Animator>();
     }
 
-    // Use this for initialization
-	void Start()
-	{
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    void FixedUpdate()
-    {
-    }
-
 	public override void StartRecord ()
 	{
 		base.StartRecord ();
 		//init
 		this.recordData = new Dictionary<int, PlayerState>();
-		player.SetRecordData(this.recordData);
-	}
+        RecordContainer.records.Add(this.recordData);
+        Debug.Log("Start Record");
+    }
 
 	public override void StopRecord ()
 	{
 		base.StopRecord ();
-	}
+        
+    }
 
 	public override void Record ()
 	{
+       
 		//record player state
 		this.recordData[this.timeController.index] = new PlayerState()
 		{
 			postion = this.transform.position,
 			animateState = this.animator.isActiveAndEnabled ? this.animator.GetCurrentAnimatorStateInfo(0).shortNameHash : 0,
-			direction = this.transform.localScale.x > 0,
+            scale = this.transform.localScale,
 			quaternion = this.transform.rotation
 		};
 		//Debug.Log("Recorded index:"  + this.timeController.index);

@@ -26,7 +26,9 @@ public class PlayerControl : MonoBehaviour, IInputListener
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
 
-	void OnDestroy()
+    private Transform groundCheck2;
+    private Transform groundCheck3;
+    void OnDestroy()
 	{
 		if(this.inputController != null)
 		this.inputController.RemoveListener (this);
@@ -36,7 +38,9 @@ public class PlayerControl : MonoBehaviour, IInputListener
 	{
 		// Setting up references.
 		groundCheck = transform.Find("groundCheck");
-		anim = GetComponent<Animator>();
+        groundCheck2 = transform.Find("groundCheck2");
+        groundCheck3 = transform.Find("groundCheck3");
+        anim = GetComponent<Animator>();
 
 		if(inputController != null)
 			inputController.AddListener (this);
@@ -45,12 +49,18 @@ public class PlayerControl : MonoBehaviour, IInputListener
 
 	void Update()
 	{
-		// The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
-		grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));  
+        grounded = false;
+        // The player is grounded if a linecast to the groundcheck position hits anything on the ground layer.
+        if (Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground")) |
+           Physics2D.Linecast(transform.position, groundCheck2.position, 1 << LayerMask.NameToLayer("Ground")) |
+           Physics2D.Linecast(transform.position, groundCheck3.position, 1 << LayerMask.NameToLayer("Ground")))
+        {
+            grounded = true;
+        }
 
-	}
+    }
 
-	void FixedUpdate ()
+    void FixedUpdate ()
 	{
 		
 	}

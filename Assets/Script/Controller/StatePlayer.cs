@@ -17,26 +17,24 @@ public class StatePlayer : MonoBehaviour
         this.animator = this.GetComponent<Animator>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.P))
-        {
-            this.isPlaying = true;
-            this.timeController.index = 0;
-        }
-
-    }
-
     void FixedUpdate()
     {
         if (isPlaying)
         {
-            if(this.recordData.ContainsKey(this.timeController.index))
-            {
+            
+            if (this.recordData.ContainsKey(this.timeController.index))
+            {   
                 var playerState = this.recordData[this.timeController.index];
                 this.transform.position = playerState.postion;
                 this.transform.rotation = playerState.quaternion;
+
+                this.transform.localScale = playerState.scale;
+
                 this.animator.Play(playerState.animateState);
+            }else if(this.timeController.index > this.recordData.Count)
+            {
+                this.timeController.index = this.recordData.Count;
+                this.timeController.Stop();
             }
         }
     }
@@ -45,4 +43,17 @@ public class StatePlayer : MonoBehaviour
     {
         this.recordData = recordData;
     }
+
+    public void Play(int index=0)
+    {
+        this.isPlaying = true;
+        this.timeController.index = index;
+    }
+
+    public void Stop()
+    {
+        this.isPlaying = false;
+    }
+    
+
 }
