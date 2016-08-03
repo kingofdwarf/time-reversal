@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{17982DFC-75F9-234E-9B83-93ACF7FA8E06}") = "time-reversal", "Assembly-CSharp.csproj", "{93989D6F-B7C2-6510-AAAF-24DF47AC76FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93989D6F-B7C2-6510-AAAF-24DF47AC76FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93989D6F-B7C2-6510-AAAF-24DF47AC76FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93989D6F-B7C2-6510-AAAF-24DF47AC76FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93989D6F-B7C2-6510-AAAF-24DF47AC76FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
