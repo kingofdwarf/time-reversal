@@ -1,9 +1,12 @@
-��Shadow���ӧζH	X
-����Shadow�Y�W�I������	X
-²�檺Trigger����
-Shadow�I����]�i�H�q�L X
-�u�Ʋ��ʱ���
-�s�@���d3
-�s�@���dprefab
-�������`����		X
-Shadow����ɤl�ĪG	X
+幫Shadow換個形象	      X
+跳到Shadow頭上碰撞偵測	X
+簡單的Trigger機關      X
+Shadow碰到門也可以通過  X
+優化移動控制
+製作關卡1             X
+製作關卡3             X
+製作關卡prefab        X
+掉落死亡偵測		       X
+Shadow機制粒子效果	   X
+Reversal Demo Scene  
+環境貼圖重複           X

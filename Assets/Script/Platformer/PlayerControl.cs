@@ -5,6 +5,8 @@ public class PlayerControl : MonoBehaviour, IInputListener
 {
 	[SerializeField]
 	private InputController inputController;
+	[SerializeField]
+	private Gun gun;
 
 	[HideInInspector]
 	public bool facingRight = true;			// For determining which way the player is currently facing.
@@ -119,6 +121,11 @@ public class PlayerControl : MonoBehaviour, IInputListener
 
 		// Add a vertical force to the player.
 		GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce));
+	}
+
+	public void Fire()
+	{
+		gun.Fire();
 	}
 
 	public IEnumerator Taunt()

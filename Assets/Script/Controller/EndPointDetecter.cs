@@ -19,6 +19,8 @@ public class EndPointDetecter : MonoBehaviour {
     {
         if (Input.GetKey(KeyCode.LeftControl))
         {
+			if (groundCheck == null)
+				return;
             if (Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("EndPoint")))
             {
                 var levelController = GameObject.FindObjectOfType<LevelController>();

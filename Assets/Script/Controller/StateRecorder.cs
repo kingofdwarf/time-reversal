@@ -22,16 +22,16 @@ public class StateRecorder : Recorder
 {
     private Animator animator;
 
-	private Dictionary<int, PlayerState> recordData= new Dictionary<int, PlayerState>();
+	public  Dictionary<int, PlayerState> recordData= new Dictionary<int, PlayerState>();
      
     void Awake()
     {
         this.animator = this.GetComponent<Animator>();
     }
 
-	public override void StartRecord ()
+	public override void StartRecord (int index = 0)
 	{
-		base.StartRecord ();
+		base.StartRecord (index);
 		//init
 		this.recordData = new Dictionary<int, PlayerState>();
         RecordContainer.records.Add(this.recordData);

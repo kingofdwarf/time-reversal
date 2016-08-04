@@ -47,8 +47,17 @@
   <ItemGroup>
      <Compile Include="Assets\Script\Controller\ActionPlayer.cs" />
      <Compile Include="Assets\Script\Controller\ActionRecorder.cs" />
+     <Compile Include="Assets\Script\Controller\DeadTrigger.cs" />
+     <Compile Include="Assets\Script\Controller\DoorController.cs" />
+     <Compile Include="Assets\Script\Controller\EndPointDetecter.cs" />
      <Compile Include="Assets\Script\Controller\InputController.cs" />
+     <Compile Include="Assets\Script\Controller\InputPlayer.cs" />
+     <Compile Include="Assets\Script\Controller\InputRecorder.cs" />
+     <Compile Include="Assets\Script\Controller\LevelController.cs" />
+     <Compile Include="Assets\Script\Controller\RecordController.cs" />
      <Compile Include="Assets\Script\Controller\Recorder.cs" />
+     <Compile Include="Assets\Script\Controller\ShadowInputPlayer.cs" />
+     <Compile Include="Assets\Script\Controller\ShadowSpawer.cs" />
      <Compile Include="Assets\Script\Controller\StatePlayer.cs" />
      <Compile Include="Assets\Script\Controller\StateRecorder.cs" />
      <Compile Include="Assets\Script\Controller\TimeController.cs" />
@@ -73,6 +82,11 @@
      <Compile Include="Assets\Script\Platformer\ScoreShadow.cs" />
      <Compile Include="Assets\Script\Platformer\SetParticleSortingLayer.cs" />
      <Compile Include="Assets\Script\Platformer\Spawner.cs" />
+     <Compile Include="Assets\Script\Presentation\Effect\InputSpawn.cs" />
+     <Compile Include="Assets\Script\Presentation\Hint.cs" />
+     <Compile Include="Assets\Script\Trigger\DoorTrigger.cs" />
+     <Compile Include="Assets\Script\Trigger\PlayerWallTrigger.cs" />
+     <Compile Include="Assets\Script\Trigger\WallTrigger.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

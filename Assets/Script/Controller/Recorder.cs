@@ -40,10 +40,10 @@ public abstract class Recorder : MonoBehaviour
 
 	public abstract void Record();
 
-	public virtual void StartRecord ()
+	public virtual void StartRecord ( int index = 0)
 	{
 		recording = true;
-		this.timeController.index = 0;
+		this.timeController.index = index;
 	}
 
 	public virtual void StopRecord()

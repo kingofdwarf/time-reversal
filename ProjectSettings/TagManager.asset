@@ -28,8 +28,8 @@ TagManager:
   - Pickups
   - Ground
   - EndPoint
-  - 
-  - 
+  - PlayerWall
+  - Shadow
   - 
   - 
   - 

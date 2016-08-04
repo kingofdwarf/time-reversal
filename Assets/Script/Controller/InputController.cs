@@ -6,6 +6,7 @@ public interface IInputListener
 {
 	void Move(float moveForce);
 	void Jump();
+	void Fire();
 }
 
 public class InputController : MonoBehaviour
@@ -29,6 +30,13 @@ public class InputController : MonoBehaviour
 			}
 		}
 
+		if (Input.GetButtonDown ("Fire1")) 
+		{
+			foreach(var listenr in listeners)
+			{
+				listenr.Fire ();
+			}
+		}
         
 	}
 

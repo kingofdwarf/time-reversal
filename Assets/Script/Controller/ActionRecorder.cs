@@ -52,9 +52,14 @@ public class ActionRecorder : Recorder, IInputListener
 		};
 	}
 
-	public override void StartRecord ()
+	public void Fire()
 	{
-		base.StartRecord ();
+		
+	}
+
+	public override void StartRecord (int index = 0)
+	{
+		base.StartRecord (index);
 		//init
 		this.recordData = new Dictionary<int, ActionState>();
 		player.SetRecordData (this.recordData);

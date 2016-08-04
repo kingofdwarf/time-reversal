@@ -3,6 +3,9 @@ using System.Collections;
 
 public class TimeController : MonoBehaviour
 {
+	public StateRecorder recorder;
+	public StatePlayer player;
+
     public int index;
 
     private bool isForward;
@@ -30,13 +33,31 @@ public class TimeController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
+			Debug.Log ("Rewinding:Enter");
             this.isForward = false;
             this.stop = false;
+
+			if (player != null && recorder != null) 
+			{
+				recorder.StopRecord ();
+				player.SetRecordData (recorder.recordData);
+				player.GetComponent<Rigidbody2D> ().isKinematic = true;
+				player.Play (this.index - 1);
+			}
+				
         }
         if (Input.GetKeyUp(KeyCode.X))
         {
+			Debug.Log ("Rewinding:Leave");
             this.isForward = true;
             this.stop = false;
+
+			if (player != null && recorder != null) 
+			{
+				player.Stop ();
+				player.GetComponent<Rigidbody2D> ().isKinematic = false;
+				recorder.StartRecord (this.index);
+			}
         }
     }
 

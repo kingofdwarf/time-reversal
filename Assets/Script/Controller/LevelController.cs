@@ -27,13 +27,20 @@ public class LevelController : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.G))
         {
-            player.StopRecord();
+			var recorders = player.GetComponents<Recorder> ();
+			foreach (var recorder in recorders) 
+			{
+				recorder.StopRecord();
+			}
+
             shadowSpawer.DestroyAll();
             shadowSpawer.SpawnAll();
             player.gameObject.SetActive(true);
             player.transform.localPosition = shadowSpawer.transform.localPosition;
-            player.StartRecord();
-           
+			foreach (var recorder in recorders) 
+			{
+				recorder.StartRecord();
+			}
         }
 
     }

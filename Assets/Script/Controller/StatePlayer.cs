@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 [RequireComponent(typeof(Animator))]
 public class StatePlayer : MonoBehaviour
@@ -21,9 +22,9 @@ public class StatePlayer : MonoBehaviour
     {
         if (isPlaying)
         {
-            
             if (this.recordData.ContainsKey(this.timeController.index))
             {   
+				//Debug.Log ("play :" + this.timeController.index);
                 var playerState = this.recordData[this.timeController.index];
                 this.transform.position = playerState.postion;
                 this.transform.rotation = playerState.quaternion;
@@ -31,11 +32,12 @@ public class StatePlayer : MonoBehaviour
                 this.transform.localScale = playerState.scale;
 
                 this.animator.Play(playerState.animateState);
-            }else if(this.timeController.index > this.recordData.Count)
-            {
-                this.timeController.index = this.recordData.Count;
-                this.timeController.Stop();
-            }
+			}else if(this.timeController.index > this.recordData.Last().Key)
+			{
+				//Debug.Log ("STOPP!!");
+				this.timeController.index = this.recordData.Last().Key;
+				this.timeController.Stop();
+			}
         }
     }
 
