@@ -124,10 +124,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5023312, guid: f0fd9e7e32081c54981d7a0133316e14, type: 2}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0fd9e7e32081c54981d7a0133316e14, type: 2}
   m_IsPrefabParent: 0
