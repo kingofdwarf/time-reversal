@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.2"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_7d15c33b73e625e68bea5eff69581fe520e1b998.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_6e6d0230f85b5d05bbfd4bd49f97289ea8aa4bc8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_92b0cbbb7a3da72b9b8ef6ff97a29e77df875b40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/libs/dom4j-1.5.1.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.2"
+        sha1="8f331809d7ccef8710885491c1a8bd531ae541e5">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/dom4j-1.5.1_6abc805875baf64673bda9cd1bd98edb23411f3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.17/f417d7f776d1ee5858fc04d9362aa45e9bedd26b/library-1.0.17.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.2"
+        sha1="f417d7f776d1ee5858fc04d9362aa45e9bedd26b">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/library-1.0.17_f06bd7c824c0c1e71efdcfb85c77590404f72a8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_4e7728750e122cbaf77a633eca84e03f767e7a0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/libs/dom4j-1.5.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="8f331809d7ccef8710885491c1a8bd531ae541e5">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/dom4j-1.5.1_6abc805875baf64673bda9cd1bd98edb23411f3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.0.1_8fc52157cafa8febe6e2f03f309c66a1c0f71a9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.17/f417d7f776d1ee5858fc04d9362aa45e9bedd26b/library-1.0.17.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="f417d7f776d1ee5858fc04d9362aa45e9bedd26b">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/library-1.0.17_f06bd7c824c0c1e71efdcfb85c77590404f72a8d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.2"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_92b0cbbb7a3da72b9b8ef6ff97a29e77df875b40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_4e7728750e122cbaf77a633eca84e03f767e7a0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.0.1_8fc52157cafa8febe6e2f03f309c66a1c0f71a9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_7d15c33b73e625e68bea5eff69581fe520e1b998.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shawn/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="false"
+        revision="23.0.2"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/shawn/Documents/AndroidStudioProjects/TravisTest/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_6e6d0230f85b5d05bbfd4bd49f97289ea8aa4bc8.jar" />
+    </item>
+
+</items>
